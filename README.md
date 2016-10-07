@@ -8,7 +8,7 @@ npm i eslint-config-iruhl-base
 
 ```
 
-## dependencies
+## Dependencies
 ```
 npm i eslint --save-dev
 

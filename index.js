@@ -149,7 +149,7 @@ module.exports = {
     'jsx-quotes': ['error', 'prefer-double'],
     'key-spacing': 'error',
     'keyword-spacing': 'error',
-    'line-comment-position': ['error', { 'ignorePattern': 'OBS!' }],
+    'line-comment-position': ['error', { "position": "above", 'ignorePattern': 'OBS!' }],
     'linebreak-style': ['error', 'unix'],
     'lines-around-comment': ['error', {
       beforeBlockComment: true,
