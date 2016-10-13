@@ -61,7 +61,8 @@ npm i eslint-plugin-react-native --save-dev
   "rules": {
   },
   "plugins": [
-    "react"
+    "react",
+    "react-native"
   ],
   "parserOptions": {
     "ecmaFeatures": {
