@@ -1,5 +1,5 @@
 # eslint-config-iruhl-base
-Base rules for eslint
+Base rules for eslint and also rules for react and import plugins
 
 ## Install
 
@@ -10,7 +10,7 @@ npm i eslint-config-iruhl-base --save-dev
 
 ## Dependencies
 ```
-npm i eslint eslint-plugin-react babel-eslint --save-dev
+npm i eslint eslint-plugin-react eslint-plugin-import babel-eslint --save-dev
 
 ```
 ## Default .eslintrc
@@ -18,7 +18,7 @@ npm i eslint eslint-plugin-react babel-eslint --save-dev
 ```
 {
   "parser": "babel-eslint",
-  "extends": "iruhl-base",
+  "extends": ["iruhl-base", "iruhl-base/imports"],
   "env": {
     "browser": true,
     "mocha": true,
@@ -27,6 +27,7 @@ npm i eslint eslint-plugin-react babel-eslint --save-dev
   "rules": {
   },
   "plugins": [
+    "import"
     "react"
   ],
   "parserOptions": {
@@ -43,7 +44,7 @@ Extra rules for react native
 ##Install
 
 ```
-npm i eslint-plugin-react-native --save-dev
+npm i eslint-plugin-react-native eslint-import-resolver-react-native --save-dev
 
 ```
 
@@ -52,7 +53,7 @@ npm i eslint-plugin-react-native --save-dev
 ```
 {
   "parser": "babel-eslint",
-  "extends": ["iruhl-base", "iruhl-base/react-native"],
+  "extends": ["iruhl-base", "iruhl-base/imports", "iruhl-base/react-native"],
   "env": {
     "browser": true,
     "mocha": true,
@@ -61,12 +62,18 @@ npm i eslint-plugin-react-native --save-dev
   "rules": {
   },
   "plugins": [
+    "import"
     "react",
     "react-native"
   ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
+    }
+  },
+  "settings": {
+    "import/resolver": {
+      "react-native": { platform: 'ios' }
     }
   }
 }
