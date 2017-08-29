@@ -21,13 +21,14 @@ npm i eslint eslint-plugin-react eslint-plugin-import babel-eslint --save-dev
   "extends": ["iruhl-base", "iruhl-base/imports"],
   "env": {
     "browser": true,
-    "mocha": true,
+    "jest": true,
     "node": true
   },
   "rules": {
+    // linebreak-style: ["error", "windows"]
   },
   "plugins": [
-    "import"
+    "import",
     "react"
   ],
   "parserOptions": {
