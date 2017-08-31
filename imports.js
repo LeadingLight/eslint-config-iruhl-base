@@ -38,6 +38,6 @@ module.exports = {
     'import/newline-after-import': ERROR,
     'import/prefer-default-export': ERROR,
     'import/max-dependencies': [ERROR, {max: 20}],
-    'import/no-unassigned-import': [ERROR, {"allow": ['*.[Cc][Ss][Ss]']}]
+    'import/no-unassigned-import': [ERROR, {'allow': ['*.[Cc][Ss][Ss]']}]
   }
 };
