@@ -110,7 +110,7 @@ module.exports = {
     'no-label-var': 'error',
     'no-restricted-globals': 'off',
     'no-shadow-restricted-names': 'error',
-    'no-shadow': ['error', { "builtinGlobals": true, "allow": [name] }],
+    'no-shadow': ['error', { "builtinGlobals": true, "allow": ['name'] }],
     'no-undef-init': 'error',
     'no-undef': 'error',
     'no-undefined': 'error',
