@@ -1,6 +1,9 @@
 # eslint-config-iruhl-base
 Base rules for eslint and also rules for react and import plugins
 
+updated for eslint 4.12.0
+
+
 ## Install
 
 ```
