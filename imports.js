@@ -31,13 +31,16 @@ module.exports = {
 
     // Style guide
     'import/first': ERROR,
+    'import/exports-last': OFF,
     'import/no-duplicates': ERROR,
     'import/no-namespace': OFF,
-    'import/extensions': [ERROR, 'never', {}],
+    'import/extensions': [ERROR, 'never', {'css': 'always', 'svg': 'always'}],
     'import/order': [ERROR, {'newlines-between': 'always'}],
     'import/newline-after-import': ERROR,
     'import/prefer-default-export': ERROR,
     'import/max-dependencies': [ERROR, {max: 20}],
     'import/no-unassigned-import': [ERROR, {'allow': ['*.[Cc][Ss][Ss]', '**/*.[Cc][Ss][Ss]']}],
+    'import/no-named-default': ERROR,
+    'import/no-anonymous-default-export': [ERROR, {'allowArray': true, 'allowLiteral': true, 'allowObject': true}]
   }
 };
